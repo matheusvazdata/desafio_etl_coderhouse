@@ -8,17 +8,17 @@ Este projeto é uma implementação de um pipeline ETL (Extração, Transformaç
 
 O projeto está organizado da seguinte forma:
 
-projeto_final_etl_coderhouse/
-│
-├── notebooks/
-│ ├── etl_pipeline.ipynb # Notebook Jupyter com a implementação do pipeline ETL
-│
-├── src/
-│ ├── extract.py # Script para extração de dados
-│ ├── load.py # Script para carga de dados no banco de dados
-│ ├── transform.py # Script para transformação de dados
-│
-└── README.md # Este arquivo README
+projeto_final_etl_coderhouse/ </br>
+│ </br>
+├── notebooks/ </br>
+│ ├── etl_pipeline.ipynb # Notebook Jupyter com a implementação do pipeline ETL </br>
+│ </br>
+├── src/ </br>
+│ ├── extract.py # Script para extração de dados </br>
+│ ├── load.py # Script para carga de dados no banco de dados </br>
+│ ├── transform.py # Script para transformação de dados </br>
+│ </br>
+└── README.md # Este arquivo README </br>
 
 ## Funcionalidades
 
@@ -72,30 +72,33 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 
 ### Dados dos Pokémons
 
-name | url
-0 bulbasaur | https://pokeapi.co/api/v2/pokemon/1/
-1 ivysaur | https://pokeapi.co/api/v2/pokemon/2/
-2 venusaur | https://pokeapi.co/api/v2/pokemon/3/
-3 charmander | https://pokeapi.co/api/v2/pokemon/4/
-4 charmeleon | https://pokeapi.co/api/v2/pokemon/5/
+| name       | url                                          |
+| ---------- | -------------------------------------------- |
+| bulbasaur  | [link](https://pokeapi.co/api/v2/pokemon/1/) |
+| ivysaur    | [link](https://pokeapi.co/api/v2/pokemon/2/) |
+| venusaur   | [link](https://pokeapi.co/api/v2/pokemon/3/) |
+| charmander | [link](https://pokeapi.co/api/v2/pokemon/4/) |
+| charmeleon | [link](https://pokeapi.co/api/v2/pokemon/5/) |
 
 ### Dados das Habilidades
 
-habilidade_1 | habilidade_2 | habilidade_3 | habilidade_4 | habilidade_5
-0 overgrow | chlorophyll | None | None | None
-1 overgrow | chlorophyll | None | None | None
-2 overgrow | chlorophyll | None | None | None
-3 blaze | solar-power | None | None | None
-4 blaze | solar-power | None | None | None
+| habilidade_1 | habilidade_2 | habilidade_3 | habilidade_4 | habilidade_5 |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| overgrow     | chlorophyll  | None         | None         | None         |
+| overgrow     | chlorophyll  | None         | None         | None         |
+| overgrow     | chlorophyll  | None         | None         | None         |
+| blaze        | solar-power  | None         | None         | None         |
+| blaze        | solar-power  | None         | None         | None         |
 
 ### Dados das Linguagens
 
-linguagem_1 | linguagem_2 | linguagem_3 | linguagem_4 | linguagem_5
-0 English | Japanese | French | German | None
-1 English | Japanese | French | German | None
-2 English | Japanese | French | German | None
-3 English | Japanese | French | German | None
-4 English | Japanese | French | German | None
+| name    |
+| ------- |
+| ja-Hrkt |
+| roomaji |
+| ko      |
+| zh-Hant |
+| fr      |
 
 ## Contribuição
 
