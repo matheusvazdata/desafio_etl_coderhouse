@@ -11,14 +11,11 @@ O projeto está organizado da seguinte forma:
 projeto_final_etl_coderhouse/ </br>
 │ </br>
 ├── notebooks/ </br>
-│ ├── etl_pipeline.ipynb # Notebook Jupyter com a implementação do pipeline ETL </br>
+│ ├── etl_pipeline.ipynb </br>
 │ </br>
-├── src/ </br>
-│ ├── extract.py # Script para extração de dados </br>
-│ ├── load.py # Script para carga de dados no banco de dados </br>
-│ ├── transform.py # Script para transformação de dados </br>
-│ </br>
-└── README.md # Este arquivo README </br>
+├── pokeapi_data.db </br>
+├── README.md </br>
+└── requirements.txt </br>
 
 ## Funcionalidades
 
