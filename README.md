@@ -9,7 +9,7 @@ Este projeto é uma implementação de um pipeline ETL (Extração, Transformaç
 O projeto está organizado da seguinte forma:
 
 projeto_final_etl_coderhouse/ </br>
-│ </br>
+│ </br>s
 ├── notebooks/ </br>
 │ ├── etl_pipeline.ipynb </br>
 │ </br>
@@ -79,23 +79,23 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 
 ### Dados das Habilidades
 
-| habilidade_1 | habilidade_2 | habilidade_3 | habilidade_4 | habilidade_5 |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| overgrow     | chlorophyll  | None         | None         | None         |
-| overgrow     | chlorophyll  | None         | None         | None         |
-| overgrow     | chlorophyll  | None         | None         | None         |
-| blaze        | solar-power  | None         | None         | None         |
-| blaze        | solar-power  | None         | None         | None         |
+| habilidade_1 | habilidade_2 |
+| ------------ | ------------ |
+| overgrow     | chlorophyll  |
+| overgrow     | chlorophyll  |
+| overgrow     | chlorophyll  |
+| blaze        | solar-power  |
+| blaze        | solar-power  |
 
 ### Dados das Linguagens
 
-| name    |
-| ------- |
-| ja-Hrkt |
-| roomaji |
-| ko      |
-| zh-Hant |
-| fr      |
+| name    | url                                   |
+| ------- | ------------------------------------- |
+| ja-Hrkt | https://pokeapi.co/api/v2/language/1/ |
+| roomaji | https://pokeapi.co/api/v2/language/2/ |
+| ko      | https://pokeapi.co/api/v2/language/3/ |
+| zh-Hant | https://pokeapi.co/api/v2/language/4/ |
+| fr      | https://pokeapi.co/api/v2/language/5/ |
 
 ## Contribuição
 
