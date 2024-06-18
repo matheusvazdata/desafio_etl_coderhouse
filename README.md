@@ -70,33 +70,33 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 
 ### Dados dos Pokémons
 
-| name       | url                                          |
-| ---------- | -------------------------------------------- |
-| bulbasaur  | [link](https://pokeapi.co/api/v2/pokemon/1/) |
-| ivysaur    | [link](https://pokeapi.co/api/v2/pokemon/2/) |
-| venusaur   | [link](https://pokeapi.co/api/v2/pokemon/3/) |
-| charmander | [link](https://pokeapi.co/api/v2/pokemon/4/) |
-| charmeleon | [link](https://pokeapi.co/api/v2/pokemon/5/) |
+| name       | url                                  |
+| ---------- | ------------------------------------ |
+| bulbasaur  | https://pokeapi.co/api/v2/pokemon/1/ |
+| ivysaur    | https://pokeapi.co/api/v2/pokemon/2/ |
+| venusaur   | https://pokeapi.co/api/v2/pokemon/3/ |
+| charmander | https://pokeapi.co/api/v2/pokemon/4/ |
+| charmeleon | https://pokeapi.co/api/v2/pokemon/5/ |
 
 ### Dados das Habilidades
 
-| name         | url                                          |
-| ------------ | -------------------------------------------- |
-| stench       | [link](https://pokeapi.co/api/v2/ability/1/) |
-| drizzle      | [link](https://pokeapi.co/api/v2/ability/2/) |
-| speed-boost  | [link](https://pokeapi.co/api/v2/ability/3/) |
-| battle-armor | [link](https://pokeapi.co/api/v2/ability/4/) |
-| sturdy       | [link](https://pokeapi.co/api/v2/ability/5/) |
+| name         | url                                  |
+| ------------ | ------------------------------------ |
+| stench       | https://pokeapi.co/api/v2/ability/1/ |
+| drizzle      | https://pokeapi.co/api/v2/ability/2/ |
+| speed-boost  | https://pokeapi.co/api/v2/ability/3/ |
+| battle-armor | https://pokeapi.co/api/v2/ability/4/ |
+| sturdy       | https://pokeapi.co/api/v2/ability/5/ |
 
 ### Dados dos Tipos
 
-| name     | url                                       |
-| -------- | ----------------------------------------- |
-| normal   | [link](https://pokeapi.co/api/v2/type/1/) |
-| fighting | [link](https://pokeapi.co/api/v2/type/2/) |
-| flying   | [link](https://pokeapi.co/api/v2/type/3/) |
-| poison   | [link](https://pokeapi.co/api/v2/type/4/) |
-| ground   | [link](https://pokeapi.co/api/v2/type/5/) |
+| name     | url                               |
+| -------- | --------------------------------- |
+| normal   | https://pokeapi.co/api/v2/type/1/ |
+| fighting | https://pokeapi.co/api/v2/type/2/ |
+| flying   | https://pokeapi.co/api/v2/type/3/ |
+| poison   | https://pokeapi.co/api/v2/type/4/ |
+| ground   | https://pokeapi.co/api/v2/type/5/ |
 
 ## Contribuição
 
