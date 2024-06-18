@@ -2,24 +2,24 @@
 
 ## Descrição
 
-Este projeto é uma implementação de um pipeline ETL (Extração, Transformação e Carga) usando a PokeAPI. O objetivo do projeto é extrair dados de pokémons, habilidades e linguagens da PokeAPI, transformar os dados conforme necessário e carregá-los em um banco de dados SQLite para posterior consulta. Além disso, o projeto inclui um sistema de alerta para notificar falhas no processo de extração.
+Este projeto é uma implementação de um pipeline ETL (Extração, Transformação e Carga) usando a PokeAPI. O objetivo do projeto é extrair dados de pokémons, habilidades e tipos de Pokémon da PokeAPI, transformar os dados conforme necessário e carregá-los em um banco de dados SQLite para posterior consulta. Além disso, o projeto inclui um sistema de alerta para notificar falhas no processo de extração.
 
 ## Estrutura do Projeto
 
 O projeto está organizado da seguinte forma:
 
 projeto_final_etl_coderhouse/ </br>
-│ </br>s
-├── notebooks/ </br>
-│ ├── etl_pipeline.ipynb </br>
 │ </br>
-├── pokeapi_data.db </br>
-├── README.md </br>
-└── requirements.txt </br>
+├── notebooks/ </br>
+│ ├── etl_pipeline.ipynb # Notebook Jupyter com a implementação do pipeline ETL </br>
+│ </br>
+├── pokeapi_data.db # Banco de dados SQLite gerado pelo pipeline ETL </br>
+├── README.md # Este arquivo README </br>
+└── requirements.txt # Arquivo de requisitos para as dependências do projeto </br>
 
 ## Funcionalidades
 
-- **Extração:** Os dados são extraídos de três endpoints da PokeAPI (`/pokemon`, `/ability`, `/language`).
+- **Extração:** Os dados são extraídos de três endpoints da PokeAPI (`/pokemon`, `/ability`, `/type`).
 - **Transformação:** Os dados são transformados em dataframes pandas.
 - **Carga:** Os dados transformados são carregados em um banco de dados SQLite.
 - **Alertas:** Um sistema de alerta notifica falhas no processo de extração utilizando a biblioteca `plyer`.
@@ -31,8 +31,8 @@ Para executar este projeto, siga as instruções abaixo:
 1. Clone o repositório:
 
    ```sh
-   git clone <https://github.com/matheusvazdata/projeto_final_etl_coderhouse.git>
-   cd <projeto_final_etl_coderhouse>
+   git clone <URL_DO_SEU_REPOSITORIO>
+   cd <NOME_DO_REPOSITORIO>
    ```
 
 2. Crie um ambiente virtual e ative-o:
@@ -57,11 +57,12 @@ Para executar o pipeline ETL, abra e execute todas as células do notebook `note
 2. **Importação das bibliotecas**
 3. **Definição da função de alerta**
 4. **Definição da função para extrair dados da API**
-5. **Definição da função para extrair dados detalhados dos Pokémons**
-6. **Definição da função para extrair três tabelas da API e relacionar dados**
+5. **Definição da função para extrair todas as páginas de uma API**
+6. **Definição da função para extrair dados das tabelas**
 7. **Definição da função para carregar dados no banco de dados**
 8. **Execução da extração, transformação e carga dos dados**
 9. **Visualização dos dados extraídos**
+10. **Exemplo de erro ao extrair uma base**
 
 ## Exemplo de Saída
 
@@ -79,23 +80,23 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 
 ### Dados das Habilidades
 
-| habilidade_1 | habilidade_2 |
-| ------------ | ------------ |
-| overgrow     | chlorophyll  |
-| overgrow     | chlorophyll  |
-| overgrow     | chlorophyll  |
-| blaze        | solar-power  |
-| blaze        | solar-power  |
+| name         | url                                          |
+| ------------ | -------------------------------------------- |
+| stench       | [link](https://pokeapi.co/api/v2/ability/1/) |
+| drizzle      | [link](https://pokeapi.co/api/v2/ability/2/) |
+| speed-boost  | [link](https://pokeapi.co/api/v2/ability/3/) |
+| battle-armor | [link](https://pokeapi.co/api/v2/ability/4/) |
+| sturdy       | [link](https://pokeapi.co/api/v2/ability/5/) |
 
-### Dados das Linguagens
+### Dados dos Tipos
 
-| name    | url                                   |
-| ------- | ------------------------------------- |
-| ja-Hrkt | https://pokeapi.co/api/v2/language/1/ |
-| roomaji | https://pokeapi.co/api/v2/language/2/ |
-| ko      | https://pokeapi.co/api/v2/language/3/ |
-| zh-Hant | https://pokeapi.co/api/v2/language/4/ |
-| fr      | https://pokeapi.co/api/v2/language/5/ |
+| name     | url                                       |
+| -------- | ----------------------------------------- |
+| normal   | [link](https://pokeapi.co/api/v2/type/1/) |
+| fighting | [link](https://pokeapi.co/api/v2/type/2/) |
+| flying   | [link](https://pokeapi.co/api/v2/type/3/) |
+| poison   | [link](https://pokeapi.co/api/v2/type/4/) |
+| ground   | [link](https://pokeapi.co/api/v2/type/5/) |
 
 ## Contribuição
 
