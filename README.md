@@ -11,11 +11,17 @@ O projeto está organizado da seguinte forma:
 projeto_final_etl_coderhouse/ </br>
 │ </br>
 ├── notebooks/ </br>
-│ ├── etl_pipeline.ipynb # Notebook Jupyter com a implementação do pipeline ETL </br>
+│ ├── etl_pipeline.ipynb </br>
 │ </br>
-├── pokeapi_data.db # Banco de dados SQLite gerado pelo pipeline ETL </br>
-├── README.md # Este arquivo README </br>
-└── requirements.txt # Arquivo de requisitos para as dependências do projeto </br>
+├── venv/ # Ambiente virtual para gerenciamento de dependências </br>
+│ ├── Include/ </br>
+│ ├── Lib/ </br>
+│ ├── Scripts/ </br>
+│ ├── pyvenv.cfg </br>
+│ </br>
+├── pokeapi_data.db </br>
+├── README.md </br>
+├── requirements.txt </br>
 
 ## Funcionalidades
 
