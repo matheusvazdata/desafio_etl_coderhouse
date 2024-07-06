@@ -136,6 +136,8 @@ A matriz de correlação entre altura, peso e experiência base mostra que há u
 
 ![Matriz de correlação entre experiência base, peso e altura dos Pokémons](https://i.imgur.com/Iax7ISf.png)
 
+> Para mais análises e visualizações, veja o [notebook completo](https://github.com/matheusvazdata/projeto_final_etl_coderhouse/blob/main/notebooks/etl_pipeline.ipynb).
+
 ## Contribuição
 
 Se você quiser contribuir com este projeto, sinta-se à vontade para fazer um fork do repositório, criar uma branch para suas alterações e abrir um pull request.
