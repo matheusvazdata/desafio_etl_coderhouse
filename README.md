@@ -30,6 +30,7 @@ projeto_final_etl_coderhouse/ </br>
 - **Transformação:** Os dados são transformados em dataframes pandas.
 - **Carga:** Os dados transformados são carregados em um banco de dados SQLite.
 - **Alertas:** Um sistema de alerta notifica falhas no processo de extração utilizando a biblioteca `plyer`.
+- **Visualizações:** Validação de hipóteses levantadas utilizando as bibliotecas `seaborn` e `matplotlib`.
 
 ## Instalação
 
