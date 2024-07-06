@@ -17,9 +17,10 @@ projeto_final_etl_coderhouse/ </br>
 │ ├── Include/ </br>
 │ ├── Lib/ </br>
 │ ├── Scripts/ </br>
+│ ├── share/ </br>
 │ ├── pyvenv.cfg </br>
 │ </br>
-├── pokeapi_data.db </br>
+├── pokeapi.db </br>
 ├── README.md </br>
 ├── requirements.txt </br>
 
@@ -29,6 +30,17 @@ projeto_final_etl_coderhouse/ </br>
 - **Transformação:** Os dados são transformados em dataframes pandas.
 - **Carga:** Os dados transformados são carregados em um banco de dados SQLite.
 - **Alertas:** Um sistema de alerta notifica falhas no processo de extração utilizando a biblioteca `plyer`.
+
+## Instalação
+
+Para executar este projeto, siga as instruções abaixo:
+
+1. Clone o repositório:
+
+   ```sh
+   git clone <URL_DO_SEU_REPOSITORIO>
+   cd <NOME_DO_REPOSITORIO>
+   ```
 
 ## Instalação
 
@@ -59,16 +71,20 @@ Para executar o pipeline ETL, abra e execute todas as células do notebook `note
 
 ### Estrutura do Notebook
 
-1. **Instalação das bibliotecas necessárias**
-2. **Importação das bibliotecas**
-3. **Definição da função de alerta**
-4. **Definição da função para extrair dados da API**
-5. **Definição da função para extrair todas as páginas de uma API**
-6. **Definição da função para extrair dados das tabelas**
-7. **Definição da função para carregar dados no banco de dados**
-8. **Execução da extração, transformação e carga dos dados**
-9. **Visualização dos dados extraídos**
-10. **Exemplo de erro ao extrair uma base**
+1. **Estrutura do Notebook**
+2. **Instalação das bibliotecas necessárias**
+3. **Importação das bibliotecas**
+4. **Definição da função de alerta**
+5. **Definição da função para extrair dados da API**
+6. **Definição da função para extrair todas as páginas de uma API**
+7. **Definição da função para extrair dados das tabelas**
+8. **Definição da função para carregar dados no banco de dados**
+9. **Execução da extração, transformação e carga dos dados**
+10. **Visualização dos dados extraídos**
+11. **Exemplo de erro ao extrair uma base**
+12. **Função para executar uma consulta e retornar um DataFrame**
+13. **Visualizando as tabelas**
+14. **Hipóteses e Visualizações**
 
 ## Exemplo de Saída
 
@@ -76,33 +92,34 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 
 ### Dados dos Pokémons
 
-| name       | url                                  |
-| ---------- | ------------------------------------ |
-| bulbasaur  | https://pokeapi.co/api/v2/pokemon/1/ |
-| ivysaur    | https://pokeapi.co/api/v2/pokemon/2/ |
-| venusaur   | https://pokeapi.co/api/v2/pokemon/3/ |
-| charmander | https://pokeapi.co/api/v2/pokemon/4/ |
-| charmeleon | https://pokeapi.co/api/v2/pokemon/5/ |
+| id  | nome       | experiencia_base | altura | peso | id_habilidade_1 | id_habilidade_2 | id_tipo_1 | id_tipo_2 |
+| --- | ---------- | ---------------- | ------ | ---- | --------------- | --------------- | --------- | --------- |
+| 1   | bulbasaur  | 64               | 7      | 69   | 65              | 65              | 12        | 4         |
+| 2   | ivysaur    | 142              | 10     | 130  | 65              | 65              | 12        | 4         |
+| 3   | venusaur   | 263              | 20     | 1000 | 65              | 65              | 12        | 4         |
+| 4   | charmander | 62               | 6      | 85   | 66              | 66              | 10        | NaN       |
+| 5   | charmeleon | 142              | 11     | 190  | 66              | 66              | 10        | NaN       |
 
 ### Dados das Habilidades
 
-| name         | url                                  |
-| ------------ | ------------------------------------ |
-| stench       | https://pokeapi.co/api/v2/ability/1/ |
-| drizzle      | https://pokeapi.co/api/v2/ability/2/ |
-| speed-boost  | https://pokeapi.co/api/v2/ability/3/ |
-| battle-armor | https://pokeapi.co/api/v2/ability/4/ |
-| sturdy       | https://pokeapi.co/api/v2/ability/5/ |
+| id  | nome        | efeito                                            |
+| --- | ----------- | ------------------------------------------------- |
+| 19  | shield-dust | Ein Pokémon mit dieser Fähigkeit ist immun geg... |
+| 34  | chlorophyll | Während strong sunlight ist die speed eines P...  |
+| 44  | rain-dish   | Pokémon mit dieser Fähigkeit heilen am Ende je... |
+| 50  | run-away    | Pokémon mit dieser Fähigkeit können immer aus...  |
+| 65  | overgrow    | When this Pokémon has 1/3 or less of its HP re... |
 
 ### Dados dos Tipos
 
-| name     | url                               |
-| -------- | --------------------------------- |
-| normal   | https://pokeapi.co/api/v2/type/1/ |
-| fighting | https://pokeapi.co/api/v2/type/2/ |
-| flying   | https://pokeapi.co/api/v2/type/3/ |
-| poison   | https://pokeapi.co/api/v2/type/4/ |
-| ground   | https://pokeapi.co/api/v2/type/5/ |
+| id  | nome   |
+| --- | ------ |
+| 3   | normal |
+| 4   | poison |
+| 7   | bug    |
+| 10  | fire   |
+| 11  | water  |
+| 12  | grass  |
 
 ## Contribuição
 
