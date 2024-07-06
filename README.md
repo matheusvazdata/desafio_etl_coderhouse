@@ -132,7 +132,7 @@ A análise da distribuição da experiência base dos pokémons mostra que a mai
 
 ### Correlação entre Altura, Peso e Experiência Base
 
-A matriz de correlação entre altura, peso e experiência base mostra que há uma correlação positiva **moderada** entre altura e peso. A correlação entre experiência base e peso é mais **fraca**, mas ainda positiva, indicando que pokémons mais pesados tendem a ter uma experiência base ligeiramente maior. A correlação entre experiência base e altura é a mais fraca entre as três.
+A matriz de correlação entre altura, peso e experiência base mostra que há uma correlação positiva **moderada** entre altura e peso. A correlação entre experiência base e peso é mais **fraca**, mas ainda positiva, indicando que pokémons mais pesados tendem a ter uma experiência base ligeiramente maior. A correlação entre experiência base e altura é a **mais fraca** entre as três.
 
 ![Matriz de correlação entre experiência base, peso e altura dos Pokémons](https://i.imgur.com/Iax7ISf.png)
 
