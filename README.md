@@ -122,6 +122,14 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 | 11  | water  |
 | 12  | grass  |
 
+## Visualização e Análises Realizadas
+
+### Distribuição da Experiência Base dos Pokémons
+
+A análise da distribuição da experiência base dos pokémons mostra que a maioria dos pokémons tem uma experiência base entre 50 e 200. Há alguns picos significativos que indicam que certos pokémons têm experiência base específica que é mais comum.
+
+![Histograma da experiência base dos Pokémons](https://i.imgur.com/NoOvdLw.png)
+
 ## Contribuição
 
 Se você quiser contribuir com este projeto, sinta-se à vontade para fazer um fork do repositório, criar uma branch para suas alterações e abrir um pull request.
