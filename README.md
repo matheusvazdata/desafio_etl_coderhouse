@@ -126,15 +126,31 @@ Abaixo estão as primeiras linhas dos dataframes carregados no banco de dados:
 
 ### Distribuição da Experiência Base dos Pokémons
 
-A análise da distribuição da experiência base dos pokémons mostra que a maioria dos pokémons tem uma experiência base entre 50 e 200. Há alguns picos significativos que indicam que certos pokémons têm experiência base específica que é mais comum.
+O gráfico de boxplot mostra a distribuição da experiência base dos Pokémons por tipo.
 
-![Histograma da experiência base dos Pokémons](https://i.imgur.com/NoOvdLw.png)
+- Dragon: Mediana alta, indicando maiores experiências base.
+- Psychic e Steel: Medianas relativamente altas.
+- Electric: Menor dispersão na experiência base.
+- Outliers: Presentes em vários tipos, como normal, poison, e electric.
+- Dispersão: Tipos normal e poison têm maior variabilidade.
+
+![Distribuição da experiência base por tipo de Pokémon](https://i.imgur.com/NPAMcH5.png)
 
 ### Correlação entre Altura, Peso e Experiência Base
 
-A matriz de correlação entre altura, peso e experiência base mostra que há uma correlação positiva **moderada** entre altura e peso. A correlação entre experiência base e peso é mais **fraca**, mas ainda positiva, indicando que pokémons mais pesados tendem a ter uma experiência base ligeiramente maior. A correlação entre experiência base e altura é a **mais fraca** entre as três.
+A matriz de correlação mostra a relação entre altura, peso e experiência base dos Pokémons.
 
-![Matriz de correlação entre experiência base, peso e altura dos Pokémons](https://i.imgur.com/Iax7ISf.png)
+Classificação das correlações:
+- Altura e Peso: Correlação moderada (0.67).
+- Peso e Experiência Base: Correlação fraca (0.35).
+- Altura e Experiência Base: Correlação bem fraca (0.24).
+
+Conclusões:
+- Altura e Peso: Pokémons mais altos tendem a ser mais pesados.
+- Peso e Experiência Base: Pokémons mais pesados tendem a ter uma experiência base ligeiramente maior.
+- Altura e Experiência Base: A altura tem um impacto muito pequeno na experiência base.
+
+![Matriz de correlação entre experiência base, peso e altura dos Pokémons](https://i.imgur.com/bxqpRe9.png)
 
 > Para mais análises e visualizações, veja o [notebook completo](https://github.com/matheusvazdata/projeto_final_etl_coderhouse/blob/main/notebooks/etl_pipeline.ipynb).
 
